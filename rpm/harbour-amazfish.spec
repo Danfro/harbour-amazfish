@@ -58,6 +58,7 @@ BuildRequires:  libkf5archive-devel
 BuildRequires:  pulseaudio-devel
 BuildRequires:  libicu-devel
 BuildRequires:  cmake
+BuildRequires:  ninja
 
 %description
 Watch companion application for SalfishOS
@@ -112,7 +113,6 @@ rm -rf %{buildroot}
 # << install pre
 
 DESTDIR=%{buildroot} cmake --install build
-
 
 # >> install post
 # << install post
