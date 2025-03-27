@@ -33,7 +33,7 @@ PageListPL {
         id: listItem
         contentHeight: styler.themeItemSizeSmall + (styler.themePaddingMedium * 2)
 
-        Loader {
+        Loader
         {
             id: workoutImage
             anchors.top: parent.top
