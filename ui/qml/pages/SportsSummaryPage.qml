@@ -20,12 +20,14 @@ PageListPL {
     IconPL {
         id: sharedIconLocation
         iconName: styler.iconLocation
+        cache: true
         visible: false
     }
 
     IconPL {
         id: sharedIconTime
         iconName: styler.iconClock
+        cache: true
         visible: false
     }
 
@@ -33,8 +35,7 @@ PageListPL {
         id: listItem
         contentHeight: styler.themeItemSizeSmall + (styler.themePaddingMedium * 2)
 
-        Loader
-        {
+        Loader {
             id: workoutImage
             anchors.top: parent.top
             anchors.topMargin: styler.themePaddingMedium
